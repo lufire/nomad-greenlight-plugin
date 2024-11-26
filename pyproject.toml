@@ -13,7 +13,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: Apache Software License",
 ]
-name = "parser_example"
+name = "nomad_plugin_parser_example"
 description = "NOMAD parser example"
 version = "0.1.0"
 readme = "README.md"
@@ -31,7 +31,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/ZBT-Tools/parser_example"
+Repository = "https://github.com/ZBT-Tools/nomad_plugin_parser_example"
 
 [project.optional-dependencies]
 dev = ["ruff", "pytest", "structlog"]
@@ -111,11 +111,11 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [project.entry-points.'nomad.plugin']
-parser_entry_point = "parser_example.parsers:parser_entry_point"
-schema_package_entry_point = "parser_example.schema_packages:schema_package_entry_point"
+parser_entry_point = "nomad_plugin_parser_example.parsers:parser_entry_point"
+schema_package_entry_point = "nomad_plugin_parser_example.schema_packages:schema_package_entry_point"
 
 
-example_upload_entry_point = "parser_example.example_uploads:example_upload_entry_point"
+example_upload_entry_point = "nomad_plugin_parser_example.example_uploads:example_upload_entry_point"
 [tool.cruft]
 # Avoid updating workflow files, this leads to permissions issues
 skip = [".github/*"]

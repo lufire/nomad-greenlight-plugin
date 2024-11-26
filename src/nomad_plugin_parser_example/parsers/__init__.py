@@ -6,7 +6,7 @@ class NewParserEntryPoint(ParserEntryPoint):
     parameter: int = Field(0, description='Custom configuration parameter')
 
     def load(self):
-        from parser_example.parsers.parser import NewParser
+        from nomad_plugin_parser_example.parsers.parser import NewParser
 
         return NewParser(**self.dict())
 

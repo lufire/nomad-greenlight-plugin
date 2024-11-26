@@ -1,2 +1,2 @@
 recursive-include * nomad_plugin.yaml
-graft src/parser_example/example_uploads
+graft src/nomad_plugin_parser_example/example_uploads

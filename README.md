@@ -1,4 +1,4 @@
-# parser_example
+# nomad_plugin_parser_example
 
 NOMAD parser example
 
@@ -9,8 +9,8 @@ This `nomad` plugin was generated with `Cookiecutter` along with `@nomad`'s [`co
 
 If you want to develop locally this plugin, clone the project and in the plugin folder, create a virtual environment (you can use Python 3.9, 3.10, or 3.11):
 ```sh
-git clone https://github.com/ZBT-Tools/parser_example.git
-cd parser_example
+git clone https://github.com/ZBT-Tools/nomad_plugin_parser_example.git
+cd nomad_plugin_parser_example
 python3.11 -m venv .pyenv
 . .pyenv/bin/activate
 ```
@@ -123,7 +123,7 @@ Read the [NOMAD plugin documentation](https://nomad-lab.eu/prod/v1/staging/docs/
 Modify the text file under `/nomad/default_plugins.txt` and add:
 ```sh
 <other-content-in-default_plugins.txt>
-parser_example==x.y.z
+nomad_plugin_parser_example==x.y.z
 ```
 where `x.y.z` represents the released version of this plugin.
 
@@ -151,7 +151,7 @@ python -m build --sdist
 You can install the package with pip:
 
 ```sh
-pip install dist/parser_example-0.1.0
+pip install dist/nomad_plugin_parser_example-0.1.0
 ```
 
 Read more about python packages, `pyproject.toml`, and how to upload packages to PyPI

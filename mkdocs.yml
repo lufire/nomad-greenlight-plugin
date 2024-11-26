@@ -1,8 +1,8 @@
-site_name: parser_example
+site_name: nomad_plugin_parser_example
 site_description: NOMAD parser example
 site_author: Lukas Feierabend
 
-repo_url: https://github.com/ZBT-Tools/parser_example
+repo_url: https://github.com/ZBT-Tools/nomad_plugin_parser_example
 edit_uri: ""
 
 nav:

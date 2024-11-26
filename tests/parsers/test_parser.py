@@ -2,7 +2,7 @@ import logging
 
 from nomad.datamodel import EntryArchive
 
-from parser_example.parsers.parser import NewParser
+from nomad_plugin_parser_example.parsers.parser import NewParser
 
 
 def test_parse_file():
