@@ -15,11 +15,11 @@ from nomad.datamodel.metainfo.workflow import Workflow
 from nomad.parsing.parser import MatchingParser
 
 configuration = config.get_plugin_entry_point(
-    'nomad_plugin_parser_example.parsers:parser_entry_point'
+    'nomad_greenlight_plugin.parsers:parser_entry_point'
 )
 
 
-class NewParser(MatchingParser):
+class GreenlightParser(MatchingParser):
     def parse(
         self,
         mainfile: str,
@@ -27,6 +27,6 @@ class NewParser(MatchingParser):
         logger: 'BoundLogger',
         child_archives: dict[str, 'EntryArchive'] = None,
     ) -> None:
-        logger.info('NewParser.parse', parameter=configuration.parameter)
+        logger.info('GreenlightParser.parse', parameter=configuration.parameter)
 
         archive.workflow2 = Workflow(name='test')

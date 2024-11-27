@@ -1,4 +1,4 @@
-# Welcome to the `nomad_plugin_parser_example` documentation
+# Welcome to the `nomad_greenlight_plugin` documentation
 
 NOMAD parser example
 
